@@ -4,15 +4,15 @@ function validation(){
   var errorMsg = document.getElementById("error_message");
   var text;
 
-  errorMsg.style.padding = "10px";
-
   if(nama === "" || nama == null){
+    errorMsg.style.padding = "10px";
     text = "Nama harus diisi!";
     errorMsg.innerHTML = text;
     return false;
   }
 
   if(peran == ""){
+    errorMsg.style.padding = "10px";
     text = "Pilih peranmu untuk memulai game";
     errorMsg.innerHTML = text;
     return false;
