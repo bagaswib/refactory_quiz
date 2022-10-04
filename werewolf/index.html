@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Werewolf Game</title>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <h1>Selamat datang di Werewolf</h1>
+      <div id="error_message"></div>      
+
+      <form id="user_form" onsubmit="return validation()">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+
+        <label for="peran">Peran</label>
+        <select id="peran" name="peran">
+          <option value="">Pilih peran</option>
+          <option value="penyihir">Penyihir</option>
+          <option value="guard">Guard</option>
+          <option value="werewolf">Werewolf</option>        
+
+        <input type="submit" id="gamestart" value="Mulai game">
+      </form>
+    </div>
+  </body>
+<html>
