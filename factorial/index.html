@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<title>Factorial Calculator</title>
+  </head>
+
+  <body>
+    <div class="container">
+    	<h1>Kalkulator Faktorial</h1>
+    	<div id="errorMessage"></div>
+
+    	<form id="calculator" onsubmit="return factorial()">
+    		<label for="angka">Angka</label>
+    		<input type="number" id="angka" name="angka" placeholder="Masukkan angka">
+
+    		<input type="submit" value="Lihat hasil">
+    	</form>
+    </div>
+  </body>
+</html>
